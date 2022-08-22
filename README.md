@@ -175,3 +175,64 @@ Se trata de una aplicación web construida con el framework Django 4, que permit
    - Upload: Se utilizará esta funcionalidad para subír, archivos CSV para importar y exportar información en el sistema.
     Se muestran los pasos realizados para su funcionamiento correcto.
     ...
+ 
+Github del proyecto:
+
+URL en Heroku:https://ferreteriamisti.herokuapp.com/
+
+URL Playlist YouTube: https://youtube.com/playlist?list=PLY9ZwtuLx1XO4YZvTq0LFWy8ehwF46HL-
+El PlayList en YouTube está formado por la explicación de los siguientes requerimientos:
+- Video 01 - Tipo de sistema y Requisitos. URL: 
+- Video 02 - Modelo de datos - DD - DER. URL: 
+- Video 03 - Administración con Django. URL:
+- Video 04 - Plantillas Bootstrap. URL:
+- Video 05 - CRUD. URL:
+- Video 06 - Servicios REST.
+- Video 07 - Realizar Operaciones asíncronas AJAX. URL:
+- Video 08 - Investigación: Uso de el componente de Email. URL:
+
+
+
+## REFERENCIAS
+-   https://www.free-css.com/free-css-templates/page246/freshshop
+-   https://docs.djangoproject.com/en/4.0/intro/tutorial06/
+-   https://www.youtube.com/watch?v=iQN0z6MDrEY&ab_channel=pildorasinformaticas
+-   https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Home_page
+
+#
+
+[license]: https://img.shields.io/github/license/rescobedoq/pw2?label=rescobedoq
+[license-file]: https://github.com/rescobedoq/pw2/blob/main/LICENSE
+
+[downloads]: https://img.shields.io/github/downloads/rescobedoq/pw2/total?label=Downloads
+[releases]: https://github.com/rescobedoq/pw2/releases/
+
+[last-commit]: https://img.shields.io/github/last-commit/rescobedoq/pw2?label=Last%20Commit
+
+[Debian]: https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white
+[debian-site]: https://www.debian.org/index.es.html
+
+[Git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
+[git-site]: https://git-scm.com/
+
+[GitHub]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[github-site]: https://github.com/
+
+[Vim]: https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white
+[vim-site]: https://www.vim.org/
+
+[Java]: https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white
+[java-site]: https://docs.oracle.com/javase/tutorial/
+
+
+[![Debian][Debian]][debian-site]
+[![Git][Git]][git-site]
+[![GitHub][GitHub]][github-site]
+[![Vim][Vim]][vim-site]
+[![Java][Java]][java-site]
+
+
+[![License][license]][license-file]
+[![Downloads][downloads]][releases]
+[![Last Commit][last-commit]][releases]
+
