@@ -143,4 +143,35 @@ Se trata de una aplicación web construida con el framework Django 4, que permit
 
    Se muestran las actividades realizadas para adecuación de plantillas, vistas, formularios en Django.
     ...
+##  ***___5. CRUD - Core Business - Clientes finales___***
+   El núcleo de negocio del sistema de inscripciones tiene valor de aceptación para los cliente finales (alumnos) radica en realizar el proceso de inscripción propiamente, que empieza desde que:
+    1. El alumno inicia sesión.
+    2. El alumno selecciona el o los cursos donde desea realizar una inscripción.
+    3. El alumno selecciona el grupo de laboatorio donde desea incribirse.
+    4. El alumno puede tener la posibilidad de anular una incripción por varias razones: cambio de grupo, corregir error, etc.
+    5. El alumno puede ver el consolidado de sus inscripciones.
+    6. El alumno cierra sesión.
 
+   Todas y cada una de estas pantallas debe funcionar en la plantilla bootstrap.
+    A continuación se muestran las actividades realizadas para su construcción:
+    ...
+
+##  ***___6. Servicios mediante una API RESTful___***
+   Se ha creado una aplicación que pondra a disposición cierta información para ser consumida por otros clientes HTTP.
+    1. GET : Con el método get se devolverá la lista de cursos, grupos y horarios establecidos para que el alumno sobre todo vea esta información en cualquier otro medio. En formato JSON. 
+    2. POST : Con este método se enviara el código del alumno y se devolvera sus inscripciones. En formato JSON.
+    
+   Ejemplo: Prueba en Página web, aplicación móvil, PDF, etc.
+    Se especifican los pasos para crear el servicio RestFul
+    ...
+
+##  ***___7. Operaciones asíncronas AJAX___***
+   Se propone el uso de AJAX para realizar la asignación de carga académica a los docentes que estan registrados. Esta operación la realizará el usuario operador encargado por el DAISI.
+   Se muestran los pasos necesarios a realizar.
+    ....
+
+## ***___8. Investigación:___***
+   - Email: Se utilizará la funcionalidad del uso de envío de correos electrónicos cuando el proceso de inscripciones culmine y al profesor le llegue la lista de alumnos inscritos en sus grupos a cargo.
+   - Upload: Se utilizará esta funcionalidad para subír, archivos CSV para importar y exportar información en el sistema.
+    Se muestran los pasos realizados para su funcionamiento correcto.
+    ...
