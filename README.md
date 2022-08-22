@@ -71,3 +71,76 @@
 
 Se trata de una aplicación web construida con el framework Django 4, que permita la inscripción de los alumnos en los horarios de laboratorios establecidos cada inicio de semestre.
 
+##  Requisitos del sistema
+   El sistema debe satisfacer los siguientes requisitos funcionales y no funcionales:
+
+   - RQ01 : El sistema debe estar disponible en Internet a traves de una URL.
+   - RQ02 : El sistema debe permitir el inicio/cierre de sesión.
+   - RQ03 : El sistema debe permitir gestionar el año académico, cursos, profesores y las asignaciones de carga académica.
+   - RQ1: La aplicación web permitirá al usuario iniciar sesión con su cuenta de google.
+   - RQ2: La aplicación web emitirá un correo electrónico cuando se creen cuentas para validar el email.
+   - RQ3: La aplicación web deberá generar en pdf el pedido realizado enviando una copia al emisor y receptor de la operación.
+   - RQ4: La aplicación web tendrá un carrito de compras para todos los productos que el cliente desee comprar. 
+   - RQ5: La aplicación web tendrá un apartado de pedidos a domicilio para materiales de construcción que se requieran en obra.
+   - RQ6: La aplicación podría generar códigos de barras. 
+   - RQ7: Se establecerá contacto con los proveedores desde la página web.
+   - RQ8: La aplicación web contará con un código de verificación para verificar el envío exitoso de su pedido.
+   - RQ9: Se podrá anular la compra después de los primeros 15 min de confirmar.
+   - RQ10: Promociones y descuentos a los usuarios serán notificadas por email.
+   - RQ11: Las acciones realizadas por día como la actualización de inventario, serán notificadas y resumidas vía email.
+   - RQ12: Habrá una categoría para usuarios Premium que tendrán beneficios de descuentos y accesos a artículos reservados “Premium” 
+   - RQ13: La aplicación podrá modificar, eliminar, crear y leer datos con facilidad.
+   - RQ14: La aplicación web contará con una base de datos correspondiente para generar ventas, almacenaje y usuarios.
+   - RQ15: Tendrá la opción de un chat bot o un asistente en vivo para hacer consultas en la misma página y también tendrá una opción para redirigir a un chat de WhatsApp.
+   - RQ16: La aplicación web tendrá un apartado de soporte para reportar reclamos, sugerencias, o para solicitar alguna recomendación, ante los productos.
+   - RQ17: En el carrito de compras se permitirá comparar productos, y sus atributos como peso, precio, descuentos, ventajas y precauciones.
+   - RQ18: Los productos tendrán categorías para facilitar la compra de los clientes.
+   - RQ19: Se incluirá un buscador de productos.
+   - RQ20: La aplicación web tendrá un diseño responsivo para que se pueda adaptar a pantallas de diferentes tamaños con un solo sitio web.
+
+   
+
+##  ***___2. Modelo de datos___***
+   El modelo de datos esta conformado por las siguientes entidades.
+
+   -   Curso : En esta entidad se almacena la información de los cursos o asignaturas que se imparten en una Escuela Profesional. Ejemplo: Programación Web 2, III semestre, 02 horas teóricas, 04 horas de laboratorio, etc..
+   -   Profesor : En esta entidad se almacena los datos de los profesores que se responsabilizan del avance académico en la enseñanza de los temas planificados en cada curso. Ejemplo: Richart Escobedo, rescobedoq@unsa.edu.pe, Magister, etc.
+
+    ...
+
+##  Diccionario de datos
+
+   En la construcción de software y en el diccionario de datos sobre todo se recomienda y se utilizará el idioma inglés para especificar objetos, atributos, etc.
+
+| Course | | | | | |
+| -- | -- | -- | -- | -- | -- |
+| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
+| code  | Numerico| No | Si | Ninguno | Código |
+| name  | Cadena| No | No | Ninguno | Nombre |
+...
+
+| Teacher | | | | | |
+| -- | -- | -- | -- | -- | -- |
+| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
+| code  | Numerico| No | Si | Ninguno | Código |
+| name | Cadena| No | No | Ninguno | Nombres |
+| email | Cadena| No | No | Ninguno | Correo electrónico |
+| gender | Fecha| Si | No | NULL | Fecha de nacimiento |
+...
+
+##  Diagrama Entidad-Relación
+    ...
+    
+##  ***___3. Administración con Django___***
+   Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
+    ...
+
+##  ***___4. Plantillas Bootstrap___***
+   Se seleccionó la siguiente plantilla para el usuario final (No administrador).
+
+   Demo online:
+    URL: https://www.free-css.com/free-css-templates/page246/freshshop
+
+   Se muestran las actividades realizadas para adecuación de plantillas, vistas, formularios en Django.
+    ...
+
