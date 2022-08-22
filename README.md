@@ -55,3 +55,19 @@
 </table>
 </div>
 
+#   WebApp con Django
+
+[![License][license]][license-file]
+[![Downloads][downloads]][releases]
+[![Last Commit][last-commit]][releases]
+
+[![Debian][Debian]][debian-site]
+[![Git][Git]][git-site]
+[![GitHub][GitHub]][github-site]
+[![Vim][Vim]][vim-site]
+[![Java][Java]][java-site]
+
+##  ***___1. Tipo de Sistema___***
+
+Se trata de una aplicación web construida con el framework Django 4, que permita la inscripción de los alumnos en los horarios de laboratorios establecidos cada inicio de semestre.
+
