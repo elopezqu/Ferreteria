@@ -67,6 +67,34 @@
 [![Vim][Vim]][vim-site]
 [![Java][Java]][java-site]
 
+- La estrutura del proyecto es la siguiente:
+
+
+ 	  	
+
+		    ├── PW2-22A-GrupoE06-Proyecto-Ferreteria_Online
+		    │   ├── ferreteriaOnline
+		    │   │    ├── autenticacion
+		    │   │    |── blog
+		    │   │    ├── carro
+		    │   │    |── contacto
+		    │   │    ├── ferreteriaOnline
+		    │   │    |── ferreteriaOnlineApp
+		    │   │    |── media
+		    │   │    ├── pedidos
+		    │   │    |── servicios
+		    │   │    ├── tienda
+		    │   │    ├── manage.py
+		    │   │    └── db.sqlite3
+		    │   │
+		    │   ├── .gitignore
+		    │   │
+		    │   ├── README.md
+		    │   │
+		    │   |__ requirements.txt
+		    │   
+		    └── README.md
+
 ##  ***___1. Tipo de Sistema___***
 
 Se trata de una aplicación web construida con el framework Django 4, que permita la inscripción de los alumnos en los horarios de laboratorios establecidos cada inicio de semestre.
