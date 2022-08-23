@@ -148,8 +148,7 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
    -   Blog: En esta entidad se podrán hacer post sobre noticias de la actualidad referentes al mundo de la ferretería como cuál es el mejor cemento que tipo de marcas de herramientas existen, entre otros, se implementa un campo categorías para diferenciar de post locales, nacionales e internacionales.
 
 
-    ...
-
+  
 ##  Diccionario de datos
 
     Se implementaron los siguientes modelos con sus respectivos atributos:
