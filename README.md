@@ -317,7 +317,7 @@ Desplegamos menú:
 
 Al hacer click en Blog:
 
-![imagen de cliente](Imagenes/clienteClickEnBlog.PNG)
+![imagen de cliente](Imagenes/clienteClickEnBLog.PNG)
 
 Al hacer click en Producto:
 
