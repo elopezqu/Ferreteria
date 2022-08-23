@@ -298,7 +298,7 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 ##  ***___6. Servicios mediante una API RESTful___***
    -  Primero tenemos que crear nuestro serializador el cual se encargara del proceso de consulta de datos, volverlo en texto plano como JSON y poder enviarlo como una URL al usuario para ello creamos el archivo <code>serializers.py</code> en nuestra aplicación ***tienda*** importamos ***serializers*** y colocamos las siguientes líneas:
 
-	```py
+```py
 		from rest_framework import serializers
 		from .models import *
 
@@ -317,9 +317,9 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 
 		    def create(self,validated_data):
 		        return CategoriaProd.objects.create(**validated_data)
-	```
+```
 	
-	-  Podemos personalizar que campos queremos que aparezcan de la siguiente manera:
+- Podemos personalizar que campos queremos que aparezcan de la siguiente manera:
 
 
 	```py
