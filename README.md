@@ -296,12 +296,161 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
     - Finalmente se procedio a colocar el codigo correspondiente para rellenar los templates con la informacion correspondiente.<br>
 
 ##  ***___6. Servicios mediante una API RESTful___***
-   Se ha creado una aplicación que pondra a disposición cierta información para ser consumida por otros clientes HTTP.
-    1. GET : Con el método get se devolverá la lista de cursos, grupos y horarios establecidos para que el alumno sobre todo vea esta información en cualquier otro medio. En formato JSON. 
-    2. POST : Con este método se enviara el código del alumno y se devolvera sus inscripciones. En formato JSON.
+   -  Primero tenemos que crear nuestro serializador el cual se encargara del proceso de consulta de datos, volverlo en texto plano como JSON y poder enviarlo como una URL al usuario para ello creamos el archivo <code>serializers.py</code> en nuestra aplicación ***tienda*** importamos ***serializers*** y colocamos las siguientes líneas:
+
+
+	```py
+		from rest_framework import serializers
+		from .models import *
+
+		class ProductoSerializer(serializers.ModelSerializer):
+		    class Meta:
+		        model = Producto
+		        fields = ("__all__")
+
+		    def create(self,validated_data):
+		        return Producto.objects.create(**validated_data)
+
+		class CategoriaSerializer(serializers.ModelSerializer):
+		    class Meta:
+		        model = CategoriaProd
+		        fields = ("__all__")
+
+		    def create(self,validated_data):
+		        return CategoriaProd.objects.create(**validated_data)
+			
+	 ```
+	-  Podemos personalizar que campos queremos que aparezcan de la siguiente manera:
+
+
+	```py
+	    class Meta:
+ 	       model = CategoriaProd
+ 	       fields = ('id','nombre','created')
+			
+	 ```
+	 
+	- Los serializadores toman la data que les mandamos, en este caso de los modelos ***Producto*** y ***CategoriaProd*** y lo serializa en este caso trabajamos con todas las líneas es por ello que ponemos <code>fields = ("__all__")</code>
+	- En el caso de <code>def create(self,validated_data)</code> nos permite validar la data que enviamos.
+
+		
+
+	- Nos dirigimos al <code>view.py</code> de nuestra aplicación ***tienda*** e importamos lo siguiente:
+
+
+	```py
+		from .serializers import *
+
+		from rest_framework.views import APIView
+		from rest_framework.response import Response
+			
+	 ```
+	 
+	- Además en <code>view.py</code> de nuestra aplicación ***tienda*** creamos la clase ***ProductoView*** para poder extraer el **APIView** y poder usar las operaciones de get y post :
+
+
+	```py
+		class ProductoView(APIView):
     
-   Ejemplo: Prueba en Página web, aplicación móvil, PDF, etc.
-    Se especifican los pasos para crear el servicio RestFul
+		    def get(self,request):
+		        dataProducto = Producto.objects.all()
+		        serProducto = ProductoSerializer(dataProducto,many=True)
+		        return Response(serProducto.data)
+    
+		    def post(self,request):
+		        serProducto = ProductoSerializer(data=request.data)
+		        serProducto.is_valid(raise_exception=True)
+		        serProducto.save()
+        
+ 		       return Response(serProducto.data)
+			
+	 ```
+
+	 
+	- Ahora vamos a crear nuestro sistema de rutas en personalidas <code>url.py</code> de nuestra aplicacion ***tienda*** escribimos las siguientes path en ***urlpatterns***, para ello antes debemos de importar ***path***:
+
+
+	```py
+		from django.urls import path
+
+		from .import views
+
+
+		urlpatterns = [
+    
+		    path('',views.tienda, name="Tienda"),
+
+		    path('productoapi',views.ProductoView.as_view(),name='productoapi'),
+		    path('productoapi/<int:producto_id>',views.ProductoDetailView.as_view()),
+		    path('categoriaapi',views.CategoriaView.as_view(),name='categoriaapi'),
+		    path('categoriaapi/<int:categoria_id>',views.CategoriaDetailView.as_view())
+    
+		]
+			
+	 ```
+	 
+	- Ahora debemos repetir los pasos anteriores para las siguientes aplicaciones::
+
+
+	```py
+
+    						'servicios',
+    						'blog',
+   						'contacto',
+    						'tienda',
+    						'carro',
+    						'autenticacion',
+    						'pedidos',
+			
+	 ```
+ 	- Habiendo realizado los pasos anteriores en las distintas aplicaciones de nuestro proyecto, procedemos a realizar las migraciones con la siguiente línea:
+
+
+	```py
+		python manage.py migrate
+			
+	 ```
+ 	- Nuestro proyecto ya incluye algunos productos agregados y un súper usuario ya creado para ya tener implementado ello en nuestro proyecto se incluye la base de datos ***db.sqlite3***, la clave y contraseña de nuestro súper usuario es la siguiente:
+
+
+	```py
+		Clave: GrupoE06
+		Contraseña: GrupoE06
+			
+	 ```
+	 
+ 	- Para poder ingresar a la APIs de nuestras aplicaciones, las URLs agregadas fueron las siguientes:
+
+
+	```py
+		Tienda:
+			- http://127.0.0.1:8000/tienda/productoapi
+			- http://127.0.0.1:8000/tienda/categoriaapi
+		Blog:
+			- http://127.0.0.1:8000/blog/blogapi
+			- http://127.0.0.1:8000/blog/categoriaapi
+			
+	 ```
+
+- __GET__
+
+	 - Podemos realizar las consultas con las urls anteriores, por ejemplo su deseamos consultar los productos de la tienda accediendo a http://127.0.0.1:8000/tienda/productoapi se nos muestra todos los productos agregados en nuestra base de datos de la siguiente manera:
+
+	![imagen](Imagenes/Img1.jpg)
+	
+	 - Si queremos ser más específicos con lo que consultamos colocamos el id del producto en la url http://127.0.0.1:8000/tienda/productoapi/1 y como resultado tenemos el producto solicitado:
+
+	![imagen](Imagenes/Img2.jpg)
+	
+	- También podemos hacer la consulta mediante el software Postman colocando la url como se hiso mediante el navegador, también se visualiza que retorna lo solicitado en la url:
+
+	![imagen](Imagenes/Img3.jpg)
+	
+- __POST__
+
+	- Para usar POST usaremos Postman, solo cambiamos el método y la entrada seleccionamos JSON, el id se crea automáticamente, resultando de la siguiente manera:
+
+	![imagen](Imagenes/Img5.jpg)
     ...
 
 ##  ***___7. Operaciones asíncronas AJAX___***
