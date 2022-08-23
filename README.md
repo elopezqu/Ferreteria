@@ -184,9 +184,9 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
    - Los detalles mas importantes de las actividades realizadas es el uso de un header y footer estatico de tal forma que solo se actualice el cuerpo de la pagina, ademas se realizo un modelo con bucles para realizar un listado para los n post que se resivieran.
     ...
 ##  ***___5. CRUD - Core Business - Clientes finales___***
-   El núcleo de negocio del sistema para promocionar productos tiene valor de aceptación para los cliente finales (consumidores) radica en realizar el proceso de creacion de productos y nuevos posteos en el blog:
-    1. El consumidor visita la pagina, donde se presenta la misma.
-    2. El consumidor procede a dirigirse al area de blog o tienda, donde se listaran los posteos pertinentes dependiendo del caso.
+   El núcleo de negocio del sistema para promocionar productos tiene valor de aceptación para los cliente finales (consumidores) radica en realizar el proceso de creacion de productos y nuevos posteos en el blog:<br>
+    1. El consumidor visita la pagina, donde se presenta la misma.<br>
+    2. El consumidor procede a dirigirse al area de blog o tienda, donde se listaran los posteos pertinentes dependiendo del caso.<br>
 
    Todas y cada una de estas pantallas debe funcionar en la plantilla.
     A continuación se muestran las actividades realizadas para su construcción:<br>
