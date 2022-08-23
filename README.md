@@ -323,7 +323,6 @@ Al hacer click en Producto:
 
 ![imagen de cliente](Imagenes/clienteClickEnProductos.PNG)
 
-
 ## ***___8. Investigación:___***
    - Email: Se utilizará la funcionalidad del uso de envío de correos electrónicos cuando el proceso de inscripciones culmine y al profesor le llegue la lista de alumnos inscritos en sus grupos a cargo.
    - Upload: Se utilizará esta funcionalidad para subír, archivos CSV para importar y exportar información en el sistema.
