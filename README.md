@@ -241,7 +241,8 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 | updated | datetime| "updated" datetime NOT NULL | 
 
 ##  Diagrama Entidad-Relación
-    ...
+
+    ![Diagrama](Imagenes/Img2.jpg)
     
 ##  ***___3. Administración con Django___***
    Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
