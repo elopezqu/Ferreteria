@@ -204,7 +204,7 @@ Se trata de una aplicación web construida con el framework Django 4, que permit
     Se muestran los pasos realizados para su funcionamiento correcto.
     ...
  
-Github del proyecto:
+Github del proyecto: https://github.com/Mario-Chura/PW2-22A-GrupoE06-Proyecto-Ferreteria_Online.git
 
 URL en Heroku:https://ferreteriamisti.herokuapp.com/
 
