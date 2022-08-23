@@ -97,7 +97,16 @@
 
 ##  ***___1. Tipo de Sistema___***
 
-Se trata de una aplicación web construida con el framework Django 4, que permita la inscripción de los alumnos en los horarios de laboratorios establecidos cada inicio de semestre.
+Se desarrolló una aplicación web construida con el framework Django 4, Bootstrap y REST, el cual permitirá al dueño de una ferretería (Ferretería Misti) a poder ofrecer sus servicios en línea donde podrá poner sus productos a la venta, promociones, servicios adicionales y recibir pedidos los cuales serán preparados para que el cliente venga a recogerlo.
+
+
+- 1.El navegador nos muestra una vista de la portada principal de la ferretería donde se ofrecen los productos, pero no se podrá agregar productos al carro de compras si no se está registrado.
+	
+- 2.Una vez registrado que puede iniciar sesión para colocamos nuestras credenciales en el login los cuales se verifican en el modelo de autentificación y nos retorna la página principal con la sesión iniciada.
+	
+- 3.Renderizada la plantilla con la sesión iniciada podemos agregar productos al carrito de compras.
+
+
 
 ##  Requisitos del sistema
    El sistema debe satisfacer los siguientes requisitos funcionales y no funcionales:
