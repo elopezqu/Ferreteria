@@ -243,13 +243,36 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 ##  Diagrama Entidad-Relación
 
 
-    ![Diagrama](Imagenes/Img2.jpg)
+![Modelo](Imagenes/Img2.jpg)
     
     
     
 ##  ***___3. Administración con Django___***
-   Se muestran los pasos realizados para crear el Proyecto, la aplicación, creacion de modelos, migraciones y habilitación del panel de administración en Django.
-    ...
+
+  - La el proyecto se creacion las siguientes aplicaciones:
+
+
+ 	  	
+
+		    ├── PW2-22A-GrupoE06-Proyecto-Ferreteria_Online
+		        ├── ferreteriaOnline
+		             ├── autenticacion (Aplicación)
+		             |── blog (Aplicación)
+		             ├── carro (Aplicación)
+		             |── contacto (Aplicación)
+		             ├── ferreteriaOnline 
+		             |── ferreteriaOnlineApp
+		             |── media
+		             ├── pedidos (Aplicación)
+		             |── servicios (Aplicación)
+		             ├── tienda (Aplicación)
+		             ├── manage.py
+		             └── db.sqlite3
+
+
+- Panel de administración
+
+![Modelo](Imagenes/Img3.jpg)
 
 ##  ***___4. Plantillas Bootstrap___***
    Se seleccionó la siguiente plantilla para el usuario final (No administrador).
