@@ -325,9 +325,7 @@ Al hacer click en Producto:
 
 ## ***___8. Investigación:___***
    - Email: Se utilizará la funcionalidad del uso de envío de correos electrónicos cuando el proceso de inscripciones culmine y al profesor le llegue la lista de alumnos inscritos en sus grupos a cargo.
-   - Upload: Se utilizará esta funcionalidad para subír, archivos CSV para importar y exportar información en el sistema.
-    Se muestran los pasos realizados para su funcionamiento correcto.
-    ...
+
  
 Github del proyecto: https://github.com/Mario-Chura/PW2-22A-GrupoE06-Proyecto-Ferreteria_Online.git
 
