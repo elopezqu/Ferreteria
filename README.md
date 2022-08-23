@@ -189,11 +189,11 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
     2. El consumidor procede a dirigirse al area de blog o tienda, donde se listaran los posteos pertinentes dependiendo del caso.
 
    Todas y cada una de estas pantallas debe funcionar en la plantilla.
-    A continuación se muestran las actividades realizadas para su construcción:
-    - Primero se realizo un desglose de la plantilla utilizada.
-    - Despues se procedio a transformar cada html en un template o archivo estatico dependiendo del caso.
-    - Luego se agregaron los archivos estaticos dentro de los templates para que estos puedan ser utilizados correctamente.
-    - Finalmente se procedio a colocar el codigo correspondiente para rellenar los templates con la informacion correspondiente.
+    A continuación se muestran las actividades realizadas para su construcción:<br>
+    - Primero se realizo un desglose de la plantilla utilizada.<br>
+    - Despues se procedio a transformar cada html en un template o archivo estatico dependiendo del caso.<br>
+    - Luego se agregaron los archivos estaticos dentro de los templates para que estos puedan ser utilizados correctamente.<br>
+    - Finalmente se procedio a colocar el codigo correspondiente para rellenar los templates con la informacion correspondiente.<br>
 
 ##  ***___6. Servicios mediante una API RESTful___***
    Se ha creado una aplicación que pondra a disposición cierta información para ser consumida por otros clientes HTTP.
