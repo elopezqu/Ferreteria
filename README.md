@@ -324,9 +324,10 @@ Al hacer click en Producto:
 ![imagen de cliente](Imagenes/clienteClickEnProductos.PNG)
 
 ## ***___8. Investigación:___***
+
 - Email: Se utilizará la funcionalidad del envío de correos electrónicos de los pedidos realizados por el cliente al correo de la empresa, del mismo modo los correos enviados de la sección de contáctenos todo ello se recibe en el correo de la empresa, para ello debemos generar un token que permita a Gmail el envió de correo de terceros y colocar las siguientes líneas en el setting del proyecto: 
    
-   			```py
+   ```py
 				EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 				EMAIL_HOST="smtp.gmail.com"
 				EMAIL_USE_TLS=True
@@ -334,7 +335,7 @@ Al hacer click en Producto:
 				EMAIL_HOST_USER="mchurapuma@gmail.com"
 				EMAIL_HOST_PASSWORD="yspvagfsfosswrvh"
 		 
-   			```
+   ```
 
  
 Github del proyecto: https://github.com/Mario-Chura/PW2-22A-GrupoE06-Proyecto-Ferreteria_Online.git
