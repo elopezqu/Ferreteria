@@ -499,7 +499,7 @@ URL Playlist YouTube: https://youtube.com/playlist?list=PLY9ZwtuLx1XO4YZvTq0LFWy
 	- Video 05 - CRUD. URL: https://youtu.be/BjQpLVBpeMI
 	- Video 06 - Servicios REST. URL: https://youtu.be/tUQVi1ewB8Y
 	- Video 07 - Realizar Operaciones asíncronas AJAX. URL:
-	- Video 08 - Investigación: Uso de el componente de Email. URL:
+	- Video 08 - Investigación: Uso de el componente de Email. URL: https://youtu.be/5R6hxfYbjZ4
 
 
 
