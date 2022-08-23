@@ -309,19 +309,19 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 
    Para mostrar un pequeño ejemplo de el cliente ` cliente\cliente.html ` usando ajax adjunto las imagenes.
 
-![imagen de cliente](Imagenes\clienteSinMover.PNG)
+![imagen de cliente](Imagenes/clienteSinMover.PNG)
 
 Desplegamos menú:
 
-![imagen de cliente](Imagenes\menúDesplegado.PNG)
+![imagen de cliente](Imagenes/menúDesplegado.PNG)
 
 Al hacer click en Blog:
 
-![imagen de cliente](Imagenes\clienteClickEnBlog.PNG)
+![imagen de cliente](Imagenes/clienteClickEnBlog.PNG)
 
 Al hacer click en Producto:
 
-![imagen de cliente](Imagenes\clienteClickEnProductos.PNG)
+![imagen de cliente](Imagenes/clienteClickEnProductos.PNG)
 
 
 ## ***___8. Investigación:___***
