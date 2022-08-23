@@ -435,21 +435,21 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 
 	 - Podemos realizar las consultas con las urls anteriores, por ejemplo su deseamos consultar los productos de la tienda accediendo a http://127.0.0.1:8000/tienda/productoapi se nos muestra todos los productos agregados en nuestra base de datos de la siguiente manera:
 
-	![imagen](Imagenes/Img1.jpg)
+	![imagen](https://github.com/Daunsa/PW2-22A-GrupoE06-Proyecto-semestral/blob/main/Imagenes/Img1.jpg)
 	
 	 - Si queremos ser más específicos con lo que consultamos colocamos el id del producto en la url http://127.0.0.1:8000/tienda/productoapi/1 y como resultado tenemos el producto solicitado:
 
-	![imagen](Imagenes/Img2.jpg)
+	![imagen](https://github.com/Daunsa/PW2-22A-GrupoE06-Proyecto-semestral/blob/main/Imagenes/Img2.jpg)
 	
 	- También podemos hacer la consulta mediante el software Postman colocando la url como se hiso mediante el navegador, también se visualiza que retorna lo solicitado en la url:
 
-	![imagen](Imagenes/Img3.jpg)
+	![imagen](https://github.com/Daunsa/PW2-22A-GrupoE06-Proyecto-semestral/blob/main/Imagenes/Img3.jpg)
 	
 - __POST__
 
 	- Para usar POST usaremos Postman, solo cambiamos el método y la entrada seleccionamos JSON, el id se crea automáticamente, resultando de la siguiente manera:
 
-	![imagen](Imagenes/Img5.jpg)
+	![imagen](https://github.com/Daunsa/PW2-22A-GrupoE06-Proyecto-semestral/blob/main/Imagenes/Img5.jpg)
     ...
 
 ##  ***___7. Operaciones asíncronas AJAX___***
