@@ -149,23 +149,94 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 
 ##  Diccionario de datos
 
-   En la construcción de software y en el diccionario de datos sobre todo se recomienda y se utilizará el idioma inglés para especificar objetos, atributos, etc.
+    Se implementaron los siguientes modelos con sus respectivos atributos:
 
-| Course | | | | | |
-| -- | -- | -- | -- | -- | -- |
-| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
-| code  | Numerico| No | Si | Ninguno | Código |
-| name  | Cadena| No | No | Ninguno | Nombre |
-...
+| tienda_producto | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| nombre  | varchar(50)|  "nombre" varchar(50) NOT NULL | 
+| imagen  | varchar(100)| "imagen" varchar(100) NOT NULL | 
+| precio  | real| "precio" real NOT NULL | 
+| disponibilidad  | bool| "disponibilidad" bool NOT NULL | 
+| created  | date| "created" date NOT NULL | 
+| updated | date| "updated" date NOT NULL | 
+| categorias_id  | bigint| "categorias_id" bigint NOT NULL |
 
-| Teacher | | | | | |
-| -- | -- | -- | -- | -- | -- |
-| Atributo  | Tipo  | Nulo | Clave | Predeterminado | Descripción |
-| code  | Numerico| No | Si | Ninguno | Código |
-| name | Cadena| No | No | Ninguno | Nombres |
-| email | Cadena| No | No | Ninguno | Correo electrónico |
-| gender | Fecha| Si | No | NULL | Fecha de nacimiento |
-...
+| tienda_categoriaprod | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| nombre  | varchar(50)|  "nombre" varchar(50) NOT NULL |  
+| created  | date| "created" date NOT NULL | 
+| updated | date| "updated" date NOT NULL | 
+
+| lineapedidos | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| cantidad  | integer|  "cantidad" integer NOT NULL | 
+| created_at  | datetime| "created_at" datetime NOT NULL | 
+| pedido_id  | bigint| "pedido_id" bigint NOT NULL | 
+| producto id | bigint| "producto_id" bigint NOT NULL | 
+| user_id  |Integer | "user_id" integer NOT NULL | 
+
+| pedidos | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| created_at  | datetime| "created_at" datetime NOT NULL | 
+| user_id  |Integer | "user_id" integer NOT NULL | 
+
+| servicios_servicio | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| titulo  | varchar(50)|  "titulo" varchar(50) NOT NULL | 
+| imagen  | varchar(100)| "imagen" varchar(100) NOT NULL | 
+| created  | datetime| "created" datetime NOT NULL | 
+| updated | datetime| "updated" date NOT NULL | 
+| contenido  | varchar(1000)| "contenido" varchar(1000) NOT NULL | 
+
+| ferreteriaOnlineApp_producto | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| nombre  | varchar(200)|  "nombre" varchar(200) NOT NULL | 
+| marca  | varchar(200)|  "marca" varchar(200) NOT NULL | 
+| precio  | decimal | "precio" decimal NOT NULL | 
+| stock  | integer| "stock" integer NOT NULL | 
+| reservado | bool| "reservado" bool NOT NULL |
+| descontable | real| "precio" real NOT NULL | 
+| fecha_publicacion  | datetime| "fecha_publicacion" datetime NOT NULL | 
+| imagen  | varchar(100)| "imagen" varchar(100) | 
+| categorias_id  | bigint| "categorias_id" bigint NOT NULL |
+
+| ferreteriaOnlineApp_categoria | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| nombre  | varchar(200)|  "nombre" varchar(200) NOT NULL |  
+| fecha_publicacion  | date| "fecha_publicacion" date NOT NULL | 
+
+| blog_post | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| titulo  | varchar(500)|  "titulo" varchar(50) NOT NULL | 
+| imagen  | varchar(100)| "imagen" varchar(100) |
+| created  | datetime| "created" datetime NOT NULL | 
+| updated | datetime| "updated" datetime NOT NULL | 
+| autor_id | integer| "autor_id" integer NOT NULL |
+| contenido  | varchar(1000)| "contenido" varchar(1000) NOT NULL |
+
+| blog_categoria | | |
+| -- | -- | -- |
+| Name  | Type  | Schema | 
+| id  | integer  | "id" integer NOT NULL | 
+| nombre  | varchar(50)|  "nombre" varchar(50) NOT NULL | 
+| created  | datetime| "created" datetime NOT NULL | 
+| updated | datetime| "updated" datetime NOT NULL | 
 
 ##  Diagrama Entidad-Relación
     ...
