@@ -106,6 +106,8 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 	
 - 3.Renderizada la plantilla con la sesión iniciada podemos agregar productos al carrito de compras.
 
+![Modelo](Imagenes/Img1.jpg)
+
 
 
 ##  Requisitos del sistema
