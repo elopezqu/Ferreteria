@@ -209,15 +209,15 @@ Github del proyecto: https://github.com/Mario-Chura/PW2-22A-GrupoE06-Proyecto-Fe
 URL en Heroku:https://ferreteriamisti.herokuapp.com/
 
 URL Playlist YouTube: https://youtube.com/playlist?list=PLY9ZwtuLx1XO4YZvTq0LFWy8ehwF46HL-
-El PlayList en YouTube está formado por la explicación de los siguientes requerimientos:
-- Video 01 - Tipo de sistema y Requisitos. URL: 
-- Video 02 - Modelo de datos - DD - DER. URL: 
-- Video 03 - Administración con Django. URL:
-- Video 04 - Plantillas Bootstrap. URL:
-- Video 05 - CRUD. URL:
-- Video 06 - Servicios REST.
-- Video 07 - Realizar Operaciones asíncronas AJAX. URL:
-- Video 08 - Investigación: Uso de el componente de Email. URL:
+- El PlayList en YouTube está formado por la explicación de los siguientes requerimientos:
+	- Video 01 - Tipo de sistema y Requisitos. URL: 
+	- Video 02 - Modelo de datos - DD - DER. URL: 
+	- Video 03 - Administración con Django. URL:
+	- Video 04 - Plantillas Bootstrap. URL:
+	- Video 05 - CRUD. URL:
+	- Video 06 - Servicios REST.
+	- Video 07 - Realizar Operaciones asíncronas AJAX. URL:
+	- Video 08 - Investigación: Uso de el componente de Email. URL:
 
 
 
