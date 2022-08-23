@@ -305,9 +305,23 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
     ...
 
 ##  ***___7. Operaciones asíncronas AJAX___***
-   Se propone el uso de AJAX para realizar la asignación de carga académica a los docentes que estan registrados. Esta operación la realizará el usuario operador encargado por el DAISI.
-   Se muestran los pasos necesarios a realizar.
-    ....
+   Se propone el uso de AJAX para hacer hacer un listado de los productos y de los blogs de nuestra ferreteria en el lado de el cliente, puesto que al usar ajax espera el retorno de la consulta, es por ello que es altamente efectivo su empleo en este tipo de paginas. El proposito es que el cliente al hacer click en el boton de blog o productos obtenga una rapida y agradable vista pulida posteriormente por bootstrap.
+
+   Para mostrar un pequeño ejemplo de el cliente ` cliente\cliente.html ` usando ajax adjunto las imagenes.
+
+   ![imagen de cliente](Imagenes\clienteSinMover.PNG)
+
+Desplegamos menú:
+
+   ![imagen de cliente](Imagenes\menúDesplegado.PNG)
+
+Al hacer click en Blog:
+
+   ![imagen de cliente](Imagenes\clienteClickEnBlog.PNG)
+
+Al hacer click en Producto:
+
+   ![imagen de cliente](Imagenes\clienteClickEnProductos.PNG)
 
 ## ***___8. Investigación:___***
    - Email: Se utilizará la funcionalidad del uso de envío de correos electrónicos cuando el proceso de inscripciones culmine y al profesor le llegue la lista de alumnos inscritos en sus grupos a cargo.
