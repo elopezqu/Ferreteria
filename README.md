@@ -181,19 +181,19 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
     URL: https://www.free-css.com/free-css-templates/page246/freshshop
 
    Se muestran las actividades realizadas para adecuación de plantillas, vistas, formularios en Django.
+   - Los detalles mas importantes de las actividades realizadas es el uso de un header y footer estatico de tal forma que solo se actualice el cuerpo de la pagina, ademas se realizo un modelo con bucles para realizar un listado para los n post que se resivieran.
     ...
 ##  ***___5. CRUD - Core Business - Clientes finales___***
-   El núcleo de negocio del sistema de inscripciones tiene valor de aceptación para los cliente finales (alumnos) radica en realizar el proceso de inscripción propiamente, que empieza desde que:
-    1. El alumno inicia sesión.
-    2. El alumno selecciona el o los cursos donde desea realizar una inscripción.
-    3. El alumno selecciona el grupo de laboatorio donde desea incribirse.
-    4. El alumno puede tener la posibilidad de anular una incripción por varias razones: cambio de grupo, corregir error, etc.
-    5. El alumno puede ver el consolidado de sus inscripciones.
-    6. El alumno cierra sesión.
+   El núcleo de negocio del sistema para promocionar productos tiene valor de aceptación para los cliente finales (consumidores) radica en realizar el proceso de creacion de productos y nuevos posteos en el blog:
+    1. El consumidor visita la pagina, donde se presenta la misma.
+    2. El consumidor procede a dirigirse al area de blog o tienda, donde se listaran los posteos pertinentes dependiendo del caso.
 
-   Todas y cada una de estas pantallas debe funcionar en la plantilla bootstrap.
+   Todas y cada una de estas pantallas debe funcionar en la plantilla.
     A continuación se muestran las actividades realizadas para su construcción:
-    ...
+    - Primero se realizo un desglose de la plantilla utilizada.
+    - Despues se procedio a transformar cada html en un template o archivo estatico dependiendo del caso.
+    - Luego se agregaron los archivos estaticos dentro de los templates para que estos puedan ser utilizados correctamente.
+    - Finalmente se procedio a colocar el codigo correspondiente para rellenar los templates con la informacion correspondiente.
 
 ##  ***___6. Servicios mediante una API RESTful___***
    Se ha creado una aplicación que pondra a disposición cierta información para ser consumida por otros clientes HTTP.
