@@ -142,7 +142,7 @@ Se desarrolló una aplicación web construida con el framework Django 4, Bootstr
 ##  ***___2. Modelo de datos___***
    El modelo de datos esta conformado por las siguientes entidades.
 
-   -   Tienda: En esta entidad se almacena los datos de los productos, as también como su categoría, por ejemplo: Categoría Herramientas (taladro, martillo, etc.)
+   -   Tienda: En esta entidad se almacena los datos de los productos, como tambien su categoría, por ejemplo: Categoría Herramientas (taladro, martillo, etc.)
    -   Servicios: En esta entidad se almacenan los servicios que va a ofrecer la ferretería en un inicio solo es venta de herramientas, pero también se pueden agregar servicios de transporte de material entre otros que se crea por conveniente, por ejemplo: Servicio de suministro de material, servicio de venta de herramientas y equipos, etc.
    -   Pedidos: En esta entidad se almacena los pedidos que realicen las personas que se han registrado y por ende pueden añadir productos a su carrito de compras
    -   Blog: En esta entidad se podrán hacer post sobre noticias de la actualidad referentes al mundo de la ferretería como cuál es el mejor cemento que tipo de marcas de herramientas existen, entre otros, se implementa un campo categorías para diferenciar de post locales, nacionales e internacionales.
